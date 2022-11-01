@@ -1,0 +1,1246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-icon:#6B6B6C;
+    --color-trait:#B8B8B8;
+    --color-text:#303030;
+    --color-societe:#F03C4B;
+    --color-justice:#AA50E6;
+    --color-storie:#FFA200;
+    --color-sante:#3CC37D;
+    --color-politique:#FAC8C8;
+    --color-titre:#B9E1FF;
+    --color-international:#319FEA;
+    --color-economie:#19C8D2;
+    --size-h1:28px;
+    --size-section:30px;
+    --size-h2:21px;
+    --size-text:18px;
+}
+a{
+    text-decoration: none;
+    color: #303030;
+}
+
+/* entête logo et navigation */
+.primary_menu{
+    max-width: 1000px;
+    width: 90%;
+    height:72px ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    margin:0 auto;
+}
+
+/* menu hamburger et recherche */
+.menu_search{
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-right: 40px;
+    
+}
+
+a.menu_hamburger{
+    color: var(--color-icon);
+    width: 30px;
+    margin-right: 10px;
+}
+
+a.search{
+    color: var(--color-icon);
+    width: 25px;
+    transform: rotate(90deg);
+
+}
+
+/* logo newspaper */
+.logo>img{
+    width:346px;
+}
+
+/* boutton inscription et connexion */
+.connexion_inscrire{
+    display: none;
+}
+
+/* menu de navigation */
+.secondary_menu{
+    display: none;
+}
+
+/* conteneur du body */
+main{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.primary_info{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* article de gauche */
+
+.article_de_gauche{
+    margin-top: 50px;
+}
+
+.rubrique_sante{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.rubrique_sante::before{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+    background-color: var(--color-sante);
+}
+
+.first_post h1{
+    font-family: "lora", sans-serif;
+    font-weight:600;
+    color: var(--color-text);
+    font-size: var(--size-h1);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.date_publication{
+    font-family: "lato", sans-serif;
+    font-size: 15px;
+    color: var(--color-text);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.date_publication > span{
+    font-weight: 600;
+}
+
+.img_first_post{
+    background-image: url(img/mega-une-jpg_mobile.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+}
+
+.first_post{
+    border-bottom: 1px solid var(--color-trait);
+    padding-bottom: 30px;
+}
+
+.img_left{
+    background-image: url(img/article-embouteillages-vacances-circulation-bison-fute-jpg_8864094_mobile.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 344px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.left{
+    border-bottom: 1px solid var(--color-trait);
+}
+
+.rubrique_societe{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.rubrique_societe::before{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+    background-color: var(--color-societe);
+}
+
+h2{
+    font-family: 'lora', sans-serif;
+    color: var(--color-text);
+    font-size:var(--size-h2);
+}
+
+.img_right{
+    background-image: url(img/article-sagesfemmes-maternites-jpg_8863764_mobile.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 344px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.right{
+    border-bottom: 1px solid var(--color-trait);
+}
+
+.last_post{
+    margin-top: 30px;
+    border-bottom: 1px solid var(--color-trait);
+    padding-bottom: 10px;
+}
+
+.infos .description{
+    font-family: "lato", sans-serif;
+    color: var(--color-text);
+    font-size: var(--size-text);
+    line-height: 1.4;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.img_last_post{
+    background-image: url(img/article-jpg_8863832_mobile.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 344px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+/* l'info en continu */
+.info_en_continu{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.plus{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.plus p{
+    font-family: "lato", sans-serif;
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.plus svg{
+    width: 30px;
+    color: var(--color-international);
+}
+
+.info_en_continu h2 :hover{
+    color: var(--color-international);
+    transition: .3s ease-in-out;
+}
+
+.title_section{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-h1);
+    font-weight: 600;
+    color: var(--color-text);
+    position: relative;
+    padding-left: 50px;
+}
+
+
+.title_section::before{
+    content:"";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+    background-color: var(--color-titre);
+}
+
+.rubrique_international{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.rubrique_international::before{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+    background-color: var(--color-international);
+}
+
+.info1, .info2, .info3, .info4, .info5{
+    border-bottom: 1px solid var(--color-trait);
+    padding-top: 20px;
+}
+
+.info6{
+    padding-top: 20px;
+}
+
+.rubrique_politique{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.rubrique_politique::before{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 7px;
+    left: 0;
+    background-color: var(--color-politique);
+}
+
+.newsletter{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    border-top: 1px solid var(--color-trait);
+    padding-top: 10px;
+    align-items: center;
+}
+
+.newsletter a>svg{
+    width: 40px;
+    color: var(--color-international);
+    padding-top: 5px;
+}
+
+.newsletter p{
+    font-family: "lato",sans-serif;
+    font-size: var(--size-h2);
+    color: var(--color-text);
+    font-weight: 600;
+    margin-left: 15px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.newsletter p :hover{
+    color: var(--color-international);
+    transition: .3s ease-in-out;
+}
+
+
+/* vidéos liées */
+.secondary_info{
+    border-top: 1px solid var(--color-international);
+    padding-top: 30px;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video_a_la_une h2{
+    margin-bottom: 10px;
+}
+
+.video_a_la_une .description{
+    font-family: "lato", sans-serif;
+    color: var(--color-text);
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.videos_secondaire{
+    border-top: 1px solid var(--color-trait);
+    padding-top: 30px;
+    width: 100%;
+}
+
+.video_liees{
+    height: 540px;
+    object-fit:contain;
+    margin-bottom: 20px;
+}
+
+.rubrique_alexis{
+    border-top: 1px solid var(--color-trait);
+    padding-top: 30px;
+}
+
+
+.third_info{
+    border-top: 1px solid var(--color-international);
+    padding-top: 20px;
+}
+
+.la_grande_crise{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-trait);
+}
+
+.la_grande_crise img{
+    height: 284px;
+    object-fit: cover;
+    margin: 30px 0;
+    padding-right: 30px;
+}
+
+.description h2{
+    margin-bottom: 20px;
+}
+
+.description p{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    line-height: 1.4;
+}
+
+.que_sont_les{
+    border-top: 1px solid var(--color-trait);
+    padding-top: 30px;
+}
+
+.image_podcast{
+    height: 528px;
+    background-image: url(img/podcast_mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lien_podcast{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.lien_podcast p{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+}
+
+.lien_podcast p a>span{
+    font-weight: 600;
+}
+
+.lien_podcast svg{
+    width: 30px;
+    color: var(--color-international);
+    transition: transform .3s ease-in-out;
+}
+
+.lien_podcast svg:hover{
+    cursor: pointer;
+    transform: translate(5px, 0);
+}
+
+/* top stories */
+.top_stories{
+    margin-top: 30px;
+    border-top: 1px solid var(--color-international);
+    padding-top: 30px;
+}
+
+.top_stories_pub{
+    display: none;
+}
+
+/* Recommandé */
+
+.rubrique_justice{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+    position: relative;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+.rubrique_justice::before{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 9px;
+    left: 0;
+    background-color: var(--color-justice);
+}
+
+.recommande{
+    margin-top: 20px;
+    border-top: 1px solid var(--color-international);
+    padding-top: 30px;
+}
+
+.la_grande_justice img{
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.descript{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.description .date_publication{
+    font-family: "lato", sans-serif;
+    font-size: 15px;
+    color: var(--color-text);
+}
+
+
+.grid_articles{
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    row-gap:20px;
+} 
+
+.bloc_title img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.article_grid{
+    border-top: 1px solid var(--color-trait);
+    padding: 20px 0;
+}
+
+.description .lire_plus{
+    font-family: "lato", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--color-international);
+}
+
+button{
+    margin:20px 0;
+    border-radius: 5px;
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-international);
+    text-align: center;
+    width: 100%;
+    border-style: none;
+    padding: 10px;
+    border: 1px solid var(--color-trait);
+}
+
+button:hover{
+    background-color: #319FEA;
+    color: white;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+footer{
+    max-width: 90%;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+hr{
+    border-top: 1px solid var(--color-international);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin: 70px 0;
+}
+
+.logos_newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo_newsletter a{
+    margin-bottom: 40px;
+}
+
+.newsletter_envoi{
+    display: flex;
+    width: 475px;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{
+    width: 1256px;
+    height: 56px;
+    border: 1px solid var(--color-trait);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline:none;
+}
+
+::placeholder{
+    font-family: "lato", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #686868;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:56px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 0;
+}
+
+.submit svg{
+    width: 40px;
+}
+
+.infos_footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 850px;
+}
+
+.social_media p{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    font-weight: 600;
+    line-height: 2;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.social_media p:nth-child(1) :hover{
+    color:#3f5efb;
+}
+
+.social_media p:nth-child(2) :hover{
+    color:#08a0e9;
+}
+
+.social_media p:nth-child(3) :hover{
+    color: #1877f2;
+}
+
+.social_media p:nth-child(4) :hover{
+    color:#FF0000;
+}
+
+.social_media p:nth-child(5) :hover{
+    color: #0077B5;
+}
+
+.actualites h3{
+    font-family: "lato", sans-serif;
+    text-transform: uppercase;
+    font-size: var(--size-text);
+    line-height: 2;
+    margin-bottom: 7px;
+}
+
+.actualites p{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+.actualites p>a:hover{
+    color: var(--color-international);
+    transition: .3s ease-in-out;
+}
+
+.actualites .decript_rubrique{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+}
+
+.actualites .decript_rubrique>span{
+    font-weight: 600;
+}
+
+
+.liens_utiles h3{
+    font-family: "lato", sans-serif;
+    text-transform: uppercase;
+    font-size: var(--size-text);
+    line-height: 2;
+    margin-bottom: 7px;
+}
+
+.liens_utiles p{
+    font-family: "lato", sans-serif;
+    font-size: var(--size-text);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+.liens_utiles p>a:hover{
+    color: var(--color-international);
+    transition: .3s ease-in-out;
+}
+
+.signature{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-titre);
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+
+
+
+@media (min-width:768px){
+
+
+    /* entête logo et navigation */
+    .primary_menu {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .menu_search {
+        margin-right:0;
+    }
+
+    .connexion_inscrire {
+        display: flex;
+        align-items: center;
+    }
+
+    .connexion_inscrire .connexion{
+        border: none;
+        background-color: transparent;
+        font-family: "lato", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--color-international);
+        border-radius: 0;
+        margin: 0 20px 0 0;
+    }
+
+    .connexion_inscrire .inscrire{
+        border: none;
+        background-color: var(--color-international);
+        font-family: "lato", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+        padding: 5px 10px;
+        margin:0;
+    }
+
+    .connexion_inscrire .inscrire:hover{
+        background-color: transparent;
+        border: 1px solid var(--color-international);
+        color: var(--color-international);
+        transition: .3s ease-in-out;
+    }
+
+
+    
+/* article de gauche */
+
+.img_first_post {
+	background-image: url(img/mega-une-jpg_mobile_dekstop.png);
+	height: 440px;
+}
+
+.second_post{
+    display: flex;
+    margin-top: 30px;
+}
+
+.img_left {
+	height: 244px;
+	margin-top:0;
+	margin-bottom: 20px;
+	cursor: pointer;
+    margin-right: 20px ;
+}
+
+.img_right {
+	height: 244px;
+	margin-top:0;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.last_post{
+    display: flex;
+}
+
+.last_post .infos{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.img_last_post {
+	background-image: url(img/ambulance_desktop.png);
+    width: 50%;
+    margin-bottom:0;
+}
+
+
+/* info en continu */
+.all_infos{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+}
+
+.all_infos .info5 {
+	border-bottom: none;
+}
+
+.all_infos .info1 {
+	margin-right: 20px;
+}
+
+.newsletter {
+	padding-top: 34px;
+}
+
+/* les grandes enquêtes */
+.que_sont_les {
+	border-top:none;
+}
+
+.la_grande_crise {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid var(--color-trait);
+}
+
+.image_podcast {
+	height: 528px;
+	background-image: url(img/podcast_dekstop.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* top stories */
+.all_top_stories{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+}
+
+.all_top_stories > .info1, .info3, .info5 {
+    margin-right: 20px;
+}
+
+.all_top_stories .info5{
+    border-bottom: none;
+}
+
+
+}
+
+
+
+@media (min-width:992px){
+
+    /* menu secondaire */
+
+    .header .primary_menu:nth-child(1){
+        margin-top: 20px;
+    }
+
+    .left {
+        margin-right: 20px;
+    }
+
+    .img_left {
+        margin-right:0;
+    }
+
+    .header .secondary_menu:nth-child(2){
+        margin-top: 40px;
+    }
+    .secondary_menu {
+        max-width: 1000px;
+        width: 90%;
+        height:53px ;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 1px solid var(--color-international);
+        border-bottom: 1px solid var(--color-international);
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation ul li{
+        margin-right: 20px;
+        list-style: none;
+        font-family: "lato", sans-serif;
+        font-size: var(--size-text);
+        color: var(--color-text);
+    }
+
+    .navigation ul li :hover{
+        color: var(--color-international);
+        transition: .3s ease-in-out;
+    }
+
+    .navigation .menu .active{
+        color: var(--color-international);
+    }
+
+    /* partie météo */
+    .meteo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .meteo img{
+        height: 18px;
+        margin-right: 15px;
+    }
+
+    .meteo p{
+        font-family: "lato", sans-serif;
+        font-size: var(--size-text);
+        color: var(--color-text);
+    }
+
+    .meteo p:nth-child(2){
+        margin-right: 15px;
+    }
+
+    .title_section::before{
+        top: 1px;
+    }
+
+    .primary_menu{
+        margin-inline:0;
+        margin: 0 auto;
+
+    }
+
+    .primary_info {
+        align-content: center;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        
+    }
+
+    .last_post {
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .infos .description {
+margin-bottom: 20px;
+    }
+
+    /* lien en continu */
+
+    .newsletter{
+        align-items: center;
+        padding-top: 19px;
+        margin-top: 0px;
+    }
+
+    .newsletter p :hover{
+        color: var(--color-international);
+        transition: .3s ease-in-out;
+    }
+
+    .all_infos .info5 {
+        border-bottom: 1px solid var(--color-trait);
+        padding-top: 20px;
+    }
+
+    .info_en_continu{
+        margin: 0;
+        align-self: flex-start;
+    }
+
+    .info_en_continu .header_section .title_section{
+        font-size: 25px;
+        padding-left: 0;
+        color: var(--color-international);
+    }
+
+    .info_en_continu .header_section .title_section::before {
+        display: none;
+    }
+
+    .info_en_continu .header_section .plus .voir_plus{
+        display: none;
+    }
+
+    .all_infos {
+        display: block;
+    }
+
+    .article_de_gauche {
+        margin-top:0;
+        padding-right: 40px;
+    }
+
+
+    /* videos liees */
+    .video_a_la_une{
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .video_a_la_une .video_liees{
+        width: 65%;
+    }
+
+    .video_a_la_une .details{
+        width: 35%;
+        margin-left: 20px;
+    }
+
+    .videos_secondaire{
+        display: flex;
+        gap: 20px;
+    }
+
+    .rubrique_wauquier{
+        width: 50%;
+    }
+
+    .rubrique_wauquier .video_liees{
+        height: 290px;
+    }
+
+    .rubrique_alexis{
+        width: 50%;
+        padding-top:0;
+    }
+
+    .rubrique_alexis .video_liees{
+        height: 290px;
+    }
+
+    /* les grandes enquêtes */
+    .que_sont_les{
+        display: flex;
+        width: 100%;
+    }
+
+    .que_sont_les .video_liees{
+        width: 50%;
+        margin-right: 20px;
+        height: 290px;
+    }
+
+    .que_sont_les .description_block{
+        width: 50%;
+    }
+
+    .description_block .description{
+        font-family: "lato", sans-serif;
+        font-size: var(--size-text);
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    .block_articles{
+        display: flex;
+    }
+
+    .articles-left{
+        width: 70%;
+        margin-right: 40px;
+    }
+
+    .cinq_choses{
+        width: 30%;
+    }
+
+    .la_grande_crise img {
+        height: 284px;
+        object-fit: cover;
+        margin: 30px 0;
+        width: 50%;
+        padding-right: 0;
+    }
+
+    .la_grande_crise .descript_crise{
+        width: 50%;
+        margin-left: 20px;
+        font-family: "lato", sans-serif;
+        font-size: var(--size-text);
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+
+    .image_podcast {
+        height: 400px;
+        background-image: url(img/podcast_dekstop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* top stories */
+
+    .stories_pub{
+        display: flex;
+    }
+
+    .all_top_stories {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        margin-right: 60px;
+    }
+
+
+    .top_stories_pub{
+        display: block;
+        object-fit: cover;
+    }
+
+    .top_stories_pub img{
+        height: 500px;
+    }
+
+    /* recommandé */
+    .la_grande_justice{
+        display: flex;
+    }
+
+    .la_grande_justice img{
+        width: 65%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .la_grande_justice .description{
+        width: 35%;
+        margin-left: 20px;
+    }
+
+    .la_grande_justice .description .rubrique_justice{
+        margin-top: 0;
+    }
+
+
+    .grid_articles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:repeat(2, auto) ;
+        gap: 20px;
+        border-top: 1px solid var(--color-trait);
+        margin-top: 20px;
+        padding-top: 20px;
+
+    }
+
+    .descript {
+        padding-bottom: 0;
+        margin-top: 15px;
+    }
+
+    .article_grid {
+        border-top: 0;
+    }
+    .article_grid:nth-child(4) {
+        border-top: 1px solid var(--color-trait);
+    }
+
+    .article_grid:nth-child(5) {
+        border-top: 1px solid var(--color-trait);
+    }
+
+    .article_grid:nth-child(6) {
+        border-top: 1px solid var(--color-trait);
+    }
+
+
+
+
+}
+

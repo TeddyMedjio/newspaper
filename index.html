@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lora:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Newspaper</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <!-- entête logo et navigation -->
+        <div class="primary_menu">
+            <!-- menu hamburger et recherche -->
+            <div class="menu_search">
+                <a href="#" class="menu_hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </a>
+                <a href="#" class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                </a>
+            </div>
+
+            <!-- logo newspaper -->
+            <a href="#" class="logo"><img src="img/logo.svg" alt="logo_newspaper"></a>
+
+            <!-- boutton inscription et connexion -->
+            <div class="connexion_inscrire">
+                <button class="connexion">connexion</button>
+                <button class="inscrire">S'inscrire</button>
+            </div>
+
+        </div>
+
+        <!-- menu de navigation -->
+        <div class="secondary_menu">
+            <!-- menu de navigation -->
+            <div class="hidden"></div>
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="#"class="active">Politique</a></li>
+                    <li><a href="#">International</a></li>
+                    <li><a href="#">Economie</a></li>
+                    <li><a href="#">Tech & Net</a></li>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Société</a></li>
+                    <li><a href="#">Santé</a></li>
+                    <li><a href="#">Afrique</a></li>
+                </ul>
+            </nav>
+            <!-- partie de la météo -->
+            <div class="meteo">
+                <a href="#">
+                    <img src="img/sun.png" alt="soleil">
+                </a>
+                <p>12°</p>
+                <p>-3°</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- conteneur du body -->
+    <main>
+
+        <section class="primary_info">
+
+            <!-- article de gauche -->
+            <div class="article_de_gauche">
+
+                <div class="first_post">
+                    <p class="rubrique_sante">Santé</p>
+            
+                    <h1> <a href="https://www.lepoint.fr/societe/le-cerveau-ce-faineant-01-07-2022-2481709_23.php">Le cerveau ce fainéant: Il existe dans le cortex un circuit réservé à l’effort. Mais nous ne sommes pas toujours disposés à le mobiliser. À quoi bon se fatiguer ?
+                    </a> 
+                        
+                    </h1>
+                    <p class="date_publication">
+                        27.Juin.2022 par <span>newspaper.com</span> 
+                    </p>
+                    <div class="img_first_post"></div>
+                </div>
+    
+                <div class="second_post">
+                    <div class="left">
+                        <div class="img_left"></div>
+                        <p class="rubrique_societe">Société</p>
+                        <h2><a href="https://www.lepoint.fr/societe/departs-en-vacances-deja-des-difficultes-de-circulation-en-ile-de-france-01-07-2022-2481785_23.php">Départs en vacances: déjà des difficultés de circulation en Île-de-France</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+                    <div class="right">
+                        <div class="img_right"></div>
+                        <p class="rubrique_societe">Société</p>
+                        <h2><a href="https://www.lepoint.fr/societe/de-nombreuses-maternites-en-fermeture-partielle-faute-de-soignants-01-07-2022-2481759_23.php">De nombreuses maternités en «fermeture partielle», faute de soignants </a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="last_post">
+                    <div class="infos">
+                        <p class="rubrique_sante">Santé</p>
+                        <h2>En Vendée, opération un médecin pour tous</h2>
+                        <p class="description">Depuis le mois de janvier, un nouveau métier a fait son apparition en Vendée : opérateur de soins non programmés (OSNP). Micro-casque relié au téléphone et vissé sur les oreilles, Alice travaille au centre de régulation du Samu, au rez-de-chaussée de l'hôpital de La Roche-sur-Yon. Or cette ancienne aide-soignante n'a pas été recrutée pour répondre au 15, mais au 116-117, une ligne ouverte cette année destinée aux patients dépourvus de médecin traitant et dont le motif de l'appel ne relève pas d'une urgence vitale.</p>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+                    <div class="img_last_post"></div>
+                </div>
+
+            </div>
+
+            <!-- l'info en continu -->
+            <div class="info_en_continu">
+                <div class="header_section">
+                    <h1 class="title_section">L'info en continu</h1>
+                    <div class="plus">
+                        <p class="voir_plus"><a href="#">Voir plus</a></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                    </div>
+                </div>
+
+                <div class="all_infos">
+                    
+                    <div class="info1">
+                        <p class="rubrique_international">International</p>
+                        <h2><a href="#">Ukraine: autour de Lyssytchansk, "ça bombarde de jour comme de nuit"</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+    
+                    <div class="info2">
+                        <p class="rubrique_politique">Politique</p>
+                        <h2><a href="#">Rétractation de Takieddine: un intermédiaire mis en examen dans le volet extorsion</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+    
+                    <div class="info3">
+                        <p class="rubrique_international">International</p>
+                        <h2><a href="#">France-Australie: «rebâtir la confiance», priorité de Macron et d’Albanese</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+    
+                    <div class="info4">
+                        <p class="rubrique_sante">Santé</p>
+                        <h2><a href="#">Crise des urgences: Élisabeth Borne écoute les propositions</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+    
+                    <div class="info5">
+                        <p class="rubrique_international">International</p>
+                        <h2><a href="#">Au Soudan, les manifestants défient la répression après une journée sanglante</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+    
+                    <div class="info6">
+                        <p class="rubrique_societe">Société</p>
+                        <h2><a href="#">La première autoroute sans barrières de péage ouvre aujourd’hui dans l’Allier</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+
+                </div>
+                <div class="newsletter">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg></a>
+                    <p><a href="#">NEWSLETTER</a></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- vidéos liées -->
+        <section class="secondary_info">
+            <div class="header_section">
+                <h1 class="title_section">Vidéos Liées</h1>
+                <div class="plus">
+                    <p class="voir_plus"><a href="#">Voir plus</a></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                </div>
+            </div>  
+
+            <div class="videos">
+                <div class="video_a_la_une">
+                    <div class="video_liees">
+                        <iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8bzcnj?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe>
+                    </div>
+                    <div class="details">
+                        <p class="rubrique_international">International</p>
+                        <h2><a href="#">Guerre en Ukraine: « Nous devons aller jusqu’à la frontière polonaise »</a></h2>
+                        <p class="description">C'est l'une des voix les plus radicales du régime. Piotr Tolstoï, 53 ans, vice-président de la Douma, le parlement de la Fédération de Russie, appartient au clan des faucons qui poussent le président Vladimir Poutine à conquérir la totalité de l'Ukraine, désormais candidate à intégrer l'Union européenne. Ancien animateur de talk-shows sur la première chaîne jusqu'en 2016, descendant du grand romancier Léon Tolstoï, auteur de Guerre et Paix, Piotr Tolstoï promet le retour de Kiev dans le giron de Moscou. À ses yeux le conflit ukrainien ne révèle rien d'autre qu'une « guerre de civilisation »...</p>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="videos_secondaire">
+                   <div class="rubrique_wauquier">
+                        <div class="video_liees">
+                            <iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8byokj?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe>
+                        </div>
+                        <p class="rubrique_politique">Politique</p>
+                        <h2><a href="#">« Malheureusement, tu n’as pas le choix » : Wauquiez, homme providentiel de la droite ?</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                   </div>
+
+                    <div class="rubrique_alexis">
+                        <div class="video_liees">
+                            <iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8c3770?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe>
+                        </div>
+                        <p class="rubrique_politique">Politique</p>
+                        <h2><a href="#">« EXCLUSIF. 
+                            La riposte d'Alexis Kohler</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- les grandes Enquêtes -->
+        <section class="third_info">
+
+            <div class="header_section">
+                <h1 class="title_section">Les Grandes Enquêtes</h1>
+                <div class="plus">
+                    <p class="voir_plus"><a href="#">Voir plus</a></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                </div>
+            </div>  
+
+
+            <div class="block_articles">
+
+                <div class="articles-left">
+                    <div class="la_grande_crise">
+                        <img src="img/crise.jpg" alt="image d'un histogram">
+                        <div class="descript_crise">
+                                <p class="rubrique_politique">Politique</p>
+                               <h2><a href="#">La grande crise qui nous menace</a></h2>
+                                   <p class="description">ENQUÊTE. Guerre en Ukraine, inflation galopante, pénuries alimentaires, investisseurs inquiets… Jusqu’à quel point l’économie mondiale va-t-elle vaciller ?</p>
+                               <p class="date_publication">
+                                   27.Juin.2022 par <span>newspaper.com</span> 
+                               </p>
+                        </div>
+                    </div>
+                    <div class="que_sont_les">
+                        <div class="video_liees">
+                            <iframe frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8bsem4?autoplay=1" width="100%" height="100%" allowfullscreen allow="autoplay"> </iframe>
+                        </div>
+                        <div class="description_block">
+                                <p class="rubrique_societe">Société</p>
+                               <h2><a href="#">Que sont les zadistes de Notre-Dame-des-Landes devenus…</a></h2>
+                                   <p class="description">REPORTAGE. Quatre ans après l’abandon de l’aéroport, les maisons poussent comme des champignons...</p>
+                               <p class="date_publication">
+                                   27.Juin.2022 par <span>newspaper.com</span> 
+                               </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="cinq_choses">
+                    <a href="#"><div class="image_podcast"></div></a>
+                    <div class="lien_podcast">
+                        <p><a href="#"><span>Newspaper </span>Podcasts</a></p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- top Stories -->
+        <section class="top_stories">
+            <div class="header_section">
+                <h1 class="title_section">Top Stories</h1>
+                <div class="plus">
+                    <p class="voir_plus"><a href="#">Voir plus</a></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                </div>
+            </div>  
+
+            <div class="stories_pub">
+
+                <div class="all_top_stories">
+    
+                    <div class="info1">
+                        <p class="rubrique_societe">Société</p>
+                        <h2><a href="#">Loi Lemoine : changez à tout moment votre assurance de crédit !</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+        
+                    <div class="info2">
+                        <p class="rubrique_societe">Société</p>
+                        <h2><a href="#">Control : un thriller haletant sur l’I.A. et la société de l’hypersurveillance</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+        
+                    <div class="info3">
+                        <p class="rubrique_sante">Santé</p>
+                        <h2><a href="#">Les critères sociaux et de gouvernance créent autant de valeur que l’environnement</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+        
+                    <div class="info4">
+                        <p class="rubrique_societe">Société</p>
+                        <h2><a href="#">Seiko Presage Sharp Edged :  Le temps d’autrefois, l’heure d’aujourd’hui</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+        
+                    <div class="info5">
+                        <p class="rubrique_societe">Société</p>
+                        <h2><a href="#">Cryptomonnaie: investissez en toute sécurité avec les Turbo24</a></h2>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+        
+                    <div class="info6">
+                        <p class="rubrique_sante">Santé</p>
+                         <h2><a href="#">J.R. dos Santos: la recette d’un polar à succès</a></h2>
+                        <p class="date_publication">
+                             27.Juin.2022 par <span>newspaper.com</span> 
+                         </p>
+                    </div>
+                </div>
+    
+                <div class="top_stories_pub">
+                    <a href="#"><img src="img/pub_montre.jpg" alt="image d'une montre"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- recommandé -->
+        <section class="recommande">
+            <div class="header_section">
+                <h1 class="title_section">Recommandé</h1>
+                <div class="plus">
+                    <p class="voir_plus"><a href="#">Voir plus</a></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      </svg>
+                </div>
+            </div>  
+
+            <div class="articles-justice">
+                <div class="la_grande_justice">
+                    <img src="img/justice.jpg" alt="peinture d'une personne au tribunal">
+                    <div class="description">
+                        <p class="rubrique_justice">Justice</p>
+                        <h2><a href="#">Affaire Le Tan: Jean-Marc Reiser estime ne pas mériter le pardon</a></h2>
+                            <p class="descript">Jean-Marc Reiser a pris la parole lors de son procès aux assises du Bas-Rhin. Jugé pour l'assassinat de Sophie Le Tan, l'accusé a estimé, vendredi 1er juillet, qu'il ne « mérit(ait) pas le pardon » des proches de la jeune étudiante. L'agresseur présumé, qui « regrette ce qui s'est passé », a reconnu avoir tué et démembré en septembre 2018 la jeune fille alors âgée de 20 ans, avant d'ajouter...</p>
+                        <p class="date_publication">
+                            27.Juin.2022 par <span>newspaper.com</span> 
+                        </p>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="grid_articles">
+                <div class="article_grid">
+                    <div class="bloc_title">
+                        <div class="description">
+                            <p class="rubrique_sante">Santé</p>
+                            <h2><a href="#">Masse de coronavirus dans le monde versus poids du cerveau poutinien</a></h2>
+                            <a href="#"><p class="lire_plus">Lire plus</p></a>
+                            <img src="img/covid_poutine.jpg" alt="image poutine avec la tête baissée">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article_grid">
+                    <div class="bloc_title">
+                        <div class="description">
+                            <p class="rubrique_sante">Santé</p>
+                            <h2><a href="#">Covid : l’Italie, toujours masquée et sur le qui-vive avant l’été</a></h2>
+                            <a href="#"><p class="lire_plus">Lire plus</p></a>
+                            <p class="descript">Lors que les Italiens pensaient savourer un premier été « post-Covid » enfin débarrassés d'une grande partie des mesures sanitaires, le virus pourrait bien revenir gâcher la saison estivale. L'inquiétude, elle s'est frayé une belle place en une de la presse aux côtés du conflit en Ukraine, de l'inflation et de la sécheresse...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article_grid">
+                    <div class="bloc_title">
+                        <div class="description">
+                            <p class="rubrique_societe">Société</p>
+                            <h2><a href="#">Covid-19: la 7e vague ne va pas «gâcher l’été», selon le Pr Delfraissy</a></h2>
+                            <a href="#"><p class="lire_plus">Lire plus</p></a>
+                            <img src="img/Deslfraissy.jpg" alt="image Delfraissy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article_grid">
+                    <div class="bloc_title">
+                        <div class="description">
+                            <p class="rubrique_sante">Santé</p>
+                            <h2><a href="#">Michaël Delafosse: Montpellier lance sa « Med Vallée »</a></h2>
+                            <a href="#"><p class="lire_plus">Lire plus</p></a>
+                            <p class="descript">Georges Frêche avait imposé «Montpellier la surdouée». Son successeur Jean-Pierre Moure avait tenté « Montpellier unlimited ». L'actuel maire et président de Montpellier Métropole, Michaël Delafosse, vient de lancer en fanfare sa marque «Med Vallée». Lundi soir, dans une salle de conférences du palais des congrès du Corum, à Montpellier, plus de 700 chercheurs, entrepreneurs et acteurs des domaines de la santé, de l'alimentation et de l'environnement ont participé aux toutes premières assises de ce nouveau « pôle d'excellence en santé globale».</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article_grid">
+                    <div class="bloc_title">
+                        <div class="description">
+                            <p class="rubrique_sante">Santé</p>
+                            <h2><a href="#">Pour la première fois, la variole du singe détectée chez un enfant en France</a></h2>
+                            <a href="#"><p class="lire_plus">Lire plus</p></a>
+                            <img src="img/variole.jpg" alt="image seringue et fiole avec une etiquette">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article_grid">
+                    <div class="bloc_title">
+                        <div class="description">
+                            <p class="rubrique_sante">Santé</p>
+                            <h2><a href="#">Covid-19: <br> « Le variant BA.5 a un boulevard devant lui » </a></h2>
+                            <a href="#"><p class="lire_plus">Lire plus</p></a>
+                            <img src="img/PCR.jpg" alt="image d'une porte et un homme avec vue sur le dos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button">toutes les recommandations</button>
+        </section>
+    </main>
+    
+    <footer>
+        <hr>
+        <div class="logos_newsletter">
+            <a href="#"><img src="img/logo.svg" alt="logo du site internet"></a>
+            <div class="newsletter_envoi">
+                <input type="email" class="email" placeholder="Souscrire à notre newsletter">
+                <button type="submit" class="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="infos_footer">
+
+            <div class="social_media">
+                <p><a href="#">instagram</a></p>
+                <p><a href="#">twitter</a></p>
+                <p><a href="#">facebook</a></p>
+                <p><a href="#">youtube</a></p>
+                <p><a href="#">linkedin</a></p>
+            </div>
+
+            <div class="actualites">
+                <h3>actualités</h3>
+                <p><a href="#">Retrouver le goût de l'effort</a></p>
+                <p><a href="#">Le monde qui vient</a></p>
+                <p><a href="#">Index des personnalités</a></p>
+                <p><a href="#">Index des journalistes</a></p>
+                <p><a href="#">Actualité sur l'Ukraine</a></p>
+            </div>
+
+            <div class="liens_utiles">
+                <h3>Liens utiles</h3>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">Gérer mes cookies</a></p>
+                <p><a href="#">Crédit d'impôt</a></p>
+                <p><a href="#">Cours de langues</a></p>
+                <p><a href="#">Publicité</a></p>
+                <p><a href="#">Nous contacter</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="signature">
+        <p>© newspaper 2022</p>
+    </div>
+
+</body>
+</html>
